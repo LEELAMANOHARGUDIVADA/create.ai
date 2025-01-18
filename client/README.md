@@ -2,11 +2,13 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-<img src="./assets/preview/1.jpg" alt="Home Screen" width="300"/>
-<img src="./assets/preview/2.jpg" alt="Home Screen" width="300"/>
-<img src="./assets/preview/3.jpg" alt="Home Screen" width="300"/>
-<img src="./assets/preview/4.jpg" alt="Home Screen" width="300"/>
-<img src="./assets/preview/5.jpg" alt="Home Screen" width="300"/>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="./assets/preview/1.jpg" alt="Home Screen" width="300"/>
+  <img src="./assets/preview/2.jpg" alt="Home Screen" width="300"/>
+  <img src="./assets/preview/3.jpg" alt="Home Screen" width="300"/>
+  <img src="./assets/preview/4.jpg" alt="Home Screen" width="300"/>
+  <img src="./assets/preview/5.jpg" alt="Home Screen" width="300"/>
+</div>
 
 ## Get started
 
