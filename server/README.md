@@ -1,3 +1,15 @@
+## Getting Started
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+2. Start the server:
+   ```bash
+   npm run dev
+   ```
+
 # API Documentation
 
 ## Overview
@@ -118,14 +130,3 @@ This document provides an overview of the API routes, models, and controllers us
 - **File:** [server/.env](server/.env)
 - **Description:** Contains environment variables for the project.
 
-## Getting Started
-
-1. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-2. Start the server:
-   ```bash
-   npm run dev
-   ```
