@@ -69,12 +69,12 @@ const ImageGeneration = () => {
         Alert.alert('Permission Denied', 'Storage permission is required to save images.');
         return;
       }
-      const imageUrl = url;  // Replace with your image URL
+      const imageUrl = url;  
       const fileUri = FileSystem.documentDirectory + 'downloaded-image.jpg';
 
       const { uri } = await FileSystem.downloadAsync(imageUrl, fileUri);
       console.log(uri);
-      // Save the image to the gallery
+      // Saving the image to the gallery
       const asset = await MediaLibrary.createAssetAsync(uri);
       await MediaLibrary.createAlbumAsync('Downloads', asset, false);
 
