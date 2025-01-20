@@ -71,12 +71,12 @@ const TextGeneration = () => {
       setMessages((prevMessages) => [...prevMessages, aiMessagePlaceholder]);
 
       await axios.post(
-        "http://192.168.34.116:5000/api/chat/addMessage",
+        "http://192.168.79.115:5000/api/chat/addMessage",
         userMessage
       );
 
       const response = await axios.post(
-        "http://192.168.34.116:5000/api/ai/generateText",
+        "http://192.168.79.115:5000/api/ai/generateText",
         { prompt: prompt }
       );
 
@@ -88,7 +88,7 @@ const TextGeneration = () => {
         )
       );
 
-      await axios.post("http://192.168.34.116:5000/api/chat/addMessage", {
+      await axios.post("http://192.168.79.115:5000/api/chat/addMessage", {
         chatId: "ai-text-generation",
         sender: "ai",
         text: response.data.response,
@@ -189,6 +189,7 @@ const TextGeneration = () => {
             What can I help with?
           </Text>
           <View className="flex flex-row items-center justify-center gap-1 mt-5">
+            <Link href={'/imagegeneration'}>
             <View className="bg-white flex flex-row items-center justify-center gap-2 py-3 px-5 rounded-full border border-neutral-200 shadow-sm">
               <Image
                 source={images.image_icon}
@@ -197,6 +198,7 @@ const TextGeneration = () => {
               />
               <Text className="text-xs">Create image</Text>
             </View>
+            </Link>
             <View className="bg-white flex flex-row items-center justify-center gap-2 py-3 px-5 rounded-full border border-neutral-200 shadow-sm">
               <Image
                 source={images.code}

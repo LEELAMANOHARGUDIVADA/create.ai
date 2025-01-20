@@ -30,6 +30,7 @@ import humanrobot from "@/assets/images/humanrobot.png";
 import girlrobot from "@/assets/images/girlrobot.png";
 import neonlights from "@/assets/images/neonlights.png";
 import astronaut from "@/assets/images/astronaut.png";
+import realistic from "@/assets/images/realistic.png";
 
 export default {
   onboarding,
@@ -64,4 +65,5 @@ export default {
   girlrobot,
   neonlights,
   astronaut,
+  realistic
 };
